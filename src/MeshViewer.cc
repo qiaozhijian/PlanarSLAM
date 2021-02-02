@@ -6,7 +6,7 @@
 namespace Planar_SLAM {
     MeshViewer::MeshViewer(Map *map): mMap(map), printFlag(true) {
 
-        mAllCloudPoints = boost::make_shared<PointCloud>();
+        mAllCloudPoints = make_shared<PointCloud>();
 
         viewerThread = make_shared<thread>(bind(&MeshViewer::viewer, this));
     }

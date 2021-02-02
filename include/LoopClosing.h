@@ -148,7 +148,7 @@ namespace Planar_SLAM
         bool mbFixScale;
 
 
-        bool mnFullBAIdx;
+        int mnFullBAIdx;
     };
 
 } //namespace Planar_SLAM
